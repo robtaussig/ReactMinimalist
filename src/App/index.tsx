@@ -1,9 +1,14 @@
-import * as React from 'react'
+import React, { FC } from 'react';
 
-export const App = ({}) => {
+interface AppProps {
+  children?: any,
+}
+
+export const App: FC<AppProps> = ({ children }) => {
   return (
     <div>
       Hello from App
+      {children}
     </div>
   );
 };
