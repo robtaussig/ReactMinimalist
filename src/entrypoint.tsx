@@ -5,11 +5,15 @@ import { App } from '~components/App';
 import {
   RecoilRoot,
 } from 'recoil';
+import { BrowserRouter } from 'react-router-dom';
 
 render(
-  <RecoilRoot>
-    <App />
-  </RecoilRoot>,
+  <BrowserRouter>
+    <RecoilRoot>
+      <App />
+    </RecoilRoot>
+  </BrowserRouter>
+  ,
   document.getElementById('root')
 );
 
