@@ -1,6 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import App from '../';
+import App from '..';
 
 describe('App', () => {
   test('It renders without crashing', () => {
